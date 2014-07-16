@@ -63,7 +63,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
     'dataProvider'=>$model->search(),
     'filter'=>$model,
     //Estilos para la tabla de administración. Mal funcionamiento del responsive de la tabla
-    'htmlOptions'=>array("div class"=>"table-responsive", "table class"=>"table table-hover table-condensed"),
+    'htmlOptions'=>array("class"=>"table-responsive table table-hover table-condensed"),
     'columns'=>array(
         'id',
         'username',

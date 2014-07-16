@@ -26,6 +26,7 @@ If you have business inquiries or other questions, please fill out the following
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
+
 	'id'=>'contact-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
@@ -34,8 +35,8 @@ If you have business inquiries or other questions, please fill out the following
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->errorSummary($model); ?>
+	<!--Comentando el form para que solo se muestren la validaciones del bootstrap-->
+	<?php #echo $form->errorSummary($model); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
@@ -67,10 +68,12 @@ If you have business inquiries or other questions, please fill out the following
 		<div>
 		<?php $this->widget('CCaptcha'); ?>
 		<?php echo $form->textField($model,'verifyCode'); ?>
+		<?php echo $form->error($model,'verifyCode'); ?>
 		</div>
+
 		<div class="hint">Please enter the letters as they are shown in the image above.
 		<br/>Letters are not case-sensitive.</div>
-		<?php echo $form->error($model,'verifyCode'); ?>
+		
 	</div>
 	<?php endif; ?>
 

@@ -46,7 +46,7 @@
 					<span class="icon-bar"></span>
 				</a>
 				<a class="brand" href="/yii/facilito"><?php echo Yii::app()->name ?></a>
-				<div class="nav-collapse">
+				<div class="nav-collapse collapse">
 					<?php $this->widget('zii.widgets.CMenu',array(
 						'htmlOptions' => array( 'class' => 'nav' ),
 						'activeCssClass'	=> 'active',
