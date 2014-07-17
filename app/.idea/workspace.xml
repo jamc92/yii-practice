@@ -22,88 +22,7 @@
     <favorites_list name="facilito" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Countries.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/models/Countries.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="1" selection-start="926" selection-end="926" vertical-scroll-proportion="0.76813656" vertical-offset="0" max-vertical-offset="703">
-              <folding>
-                <element signature="e#6#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountriesController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/CountriesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="62" selection-start="503" selection-end="661" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1080">
-              <folding>
-                <element signature="e#6#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/countries/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="46" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-23.333334" vertical-offset="55" max-vertical-offset="780">
-              <folding>
-                <element signature="e#6#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/UsersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="81" selection-start="881" selection-end="881" vertical-scroll-proportion="23.833334" vertical-offset="1037" max-vertical-offset="2865">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/countries/create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="765">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginForm.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1245">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/users/create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="323" selection-end="323" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/countries/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="120" selection-start="690" selection-end="695" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="495">
-              <folding>
-                <element signature="e#6#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -123,11 +42,11 @@
         <option value="$PROJECT_DIR$/themes/blackboot/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/views/users/admin.php" />
         <option value="$PROJECT_DIR$/protected/views/site/login.php" />
-        <option value="$PROJECT_DIR$/protected/views/countries/create.php" />
-        <option value="$PROJECT_DIR$/protected/views/countries/index.php" />
         <option value="$PROJECT_DIR$/protected/views/countries/update.php" />
         <option value="$PROJECT_DIR$/protected/models/Countries.php" />
+        <option value="$PROJECT_DIR$/protected/views/countries/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/CountriesController.php" />
+        <option value="$PROJECT_DIR$/protected/views/countries/create.php" />
       </list>
     </option>
   </component>
@@ -384,7 +303,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1442" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -392,7 +311,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29027778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19166666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -565,13 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/users/_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="4" selection-start="1289" selection-end="1314" vertical-scroll-proportion="0.7517241" vertical-offset="40" max-vertical-offset="765">
@@ -588,39 +500,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/countries/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="120" selection-start="690" selection-end="695" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="495">
-          <folding>
-            <element signature="e#6#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/countries/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/countries/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="46" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-23.333334" vertical-offset="55" max-vertical-offset="780">
-          <folding>
-            <element signature="e#6#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="81" selection-start="881" selection-end="881" vertical-scroll-proportion="23.833334" vertical-offset="1037" max-vertical-offset="2865">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/CountriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="62" selection-start="503" selection-end="661" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1080">
+        <state line="22" column="2" selection-start="708" selection-end="708" vertical-scroll-proportion="0.45517242" vertical-offset="0" max-vertical-offset="725">
           <folding>
             <element signature="e#6#89#0" expanded="true" />
           </folding>
@@ -633,6 +513,45 @@
           <folding>
             <element signature="e#6#133#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/countries/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="32" selection-end="32" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/CountriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="13" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.51448274" vertical-offset="272" max-vertical-offset="1170">
+          <folding>
+            <element signature="e#6#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/countries/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="46" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.7724138" vertical-offset="55" max-vertical-offset="780">
+          <folding>
+            <element signature="e#6#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="81" selection-start="881" selection-end="881" vertical-scroll-proportion="-0.7889655" vertical-offset="1037" max-vertical-offset="2865">
+          <folding />
         </state>
       </provider>
     </entry>
