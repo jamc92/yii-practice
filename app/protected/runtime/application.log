@@ -4410,3 +4410,31 @@ Stack trace:
 REQUEST_URI=/yii-practice/app/users/index
 HTTP_REFERER=http://localhost/yii-practice/app/users/25
 ---
+2014/07/17 05:57:30 [error] [php] Array to string conversion (/opt/lampp/htdocs/yii-practice/framework/zii/widgets/grid/CGridView.php:479)
+Stack trace:
+#0 /opt/lampp/htdocs/yii-practice/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#1 /opt/lampp/htdocs/yii-practice/framework/zii/widgets/CBaseListView.php(135): CGridView->renderContent()
+#2 /opt/lampp/htdocs/yii-practice/framework/web/CBaseController.php(173): CGridView->run()
+#3 /opt/lampp/htdocs/yii-practice/app/protected/views/users/admin.php(78): UsersController->widget()
+#4 /opt/lampp/htdocs/yii-practice/framework/web/CBaseController.php(126): require()
+#5 /opt/lampp/htdocs/yii-practice/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#6 /opt/lampp/htdocs/yii-practice/framework/web/CController.php(869): UsersController->renderFile()
+#7 /opt/lampp/htdocs/yii-practice/framework/web/CController.php(782): UsersController->renderPartial()
+#8 /opt/lampp/htdocs/yii-practice/app/protected/controllers/UsersController.php(155): UsersController->render()
+#9 /opt/lampp/htdocs/yii-practice/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#10 /opt/lampp/htdocs/yii-practice/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /opt/lampp/htdocs/yii-practice/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#12 /opt/lampp/htdocs/yii-practice/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /opt/lampp/htdocs/yii-practice/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /opt/lampp/htdocs/yii-practice/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#15 /opt/lampp/htdocs/yii-practice/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /opt/lampp/htdocs/yii-practice/framework/web/CController.php(291): CFilterChain->run()
+#17 /opt/lampp/htdocs/yii-practice/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#18 /opt/lampp/htdocs/yii-practice/framework/web/CWebApplication.php(282): UsersController->run()
+#19 /opt/lampp/htdocs/yii-practice/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /opt/lampp/htdocs/yii-practice/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /opt/lampp/htdocs/yii-practice/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii-practice/app/users/admin
+in /opt/lampp/htdocs/yii-practice/app/protected/views/users/admin.php (78)
+in /opt/lampp/htdocs/yii-practice/app/protected/controllers/UsersController.php (155)
+in /opt/lampp/htdocs/yii-practice/app/index.php (13)
