@@ -18,7 +18,7 @@ $this->breadcrumbs=array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
+	    'validateOnSubmit'=>true,
 	),
 )); ?>
 
