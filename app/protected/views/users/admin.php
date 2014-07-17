@@ -60,10 +60,13 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 $this->widget('zii.widgets.grid.CGridView', array(
     'id'=>'users-grid',
+    //Estilos de la vista para la tabla
+    'itemsCssClass'=>"table table-striped table-responsive",
+    'pager'=>array("htmlOptions"=>array("class"=>"pagination")),
     'dataProvider'=>$model->search(),
     'filter'=>$model,
     //Estilos para la tabla de administración. Mal funcionamiento del responsive de la tabla
-    'htmlOptions'=>array("class"=>"table-responsive table table-hover table-condensed"),
+    //'htmlOptions'=>array("class"=>"table-responsive table table-hover table-condensed"),
     'columns'=>array(
         'id',
         'username',
