@@ -45,7 +45,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="/yii/facilito"><?php echo Yii::app()->name ?></a>
+				<a class="brand" href="/yii-practice/app"><?php echo Yii::app()->name ?></a>
 				<div class="nav-collapse collapse">
 					<?php $this->widget('zii.widgets.CMenu',array(
 						'htmlOptions' => array( 'class' => 'nav' ),
@@ -56,6 +56,7 @@
 							array('label'=>'Contact', 'url'=>array('/site/contact')),
                             //Vista de la opcion 'Usuarios' en el menu de navegacion, no visible para 'invitados'
                             array('label'=>'Users', 'url'=>array('/users'), 'visible'=>!Yii::app()->user->isGuest),
+                            array('label'=>'Countries', 'url'=>array('/countries'), 'visible'=>!Yii::app()->user->isGuest),
 							array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 							array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 						),
