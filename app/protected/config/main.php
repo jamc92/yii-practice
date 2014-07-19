@@ -1,7 +1,7 @@
 <?php
 
 
-// uncomment the following to define a path alia
+// uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
 // This is the main Web application configuration. Any writable
