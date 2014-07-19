@@ -4,22 +4,27 @@
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
+#Seteando Path Alias para mi carpeta de clases
+Yii::setPathOfAlias('me',dirname(__FILE__)."/../../../jmadridcamacho");
+
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'My Practice with Yii',
     //Se apunta al tema 'blackboot' guardado en la carpeta 'themes'
     'theme'=>'blackboot',
 
 	// preloading 'log' component
-    'preload'=>array('log'),
+    'preload'=>array('log','happy','sad'),
 
 
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        #Llamando mi propio import
+        #'me.*',
 	),
 
 	'modules'=>array(
@@ -36,10 +41,24 @@ return array(
 
 	// application components
 	'components'=>array(
+
+		#Definiendo componente propio
+		#Los componentes siempre van a recibir un parametro llamado 'class' que es la clase en que esta basada ese componente
+		/*'happy'=>array(
+				'class'=>'ext.JMHappy',
+		),
+		'sad'=>array(
+				'class'=>'ext.RHappy',
+				#Seteando los atributos de la clase
+				'saludo'=>1,
+		),*/
+
+
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(

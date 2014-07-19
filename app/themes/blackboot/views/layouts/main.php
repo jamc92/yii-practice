@@ -63,30 +63,43 @@
 					)); ?>
 					
 				</div><!--/.nav-collapse -->
-			</div>
-		</div>
-	</div>
+			</div><!--/.container-->
+		</div><!--./navbar-inner-->
+	</div><!--./navbar fixed-top-->
 	
 	<div class="cont">
-	<div class="container-fluid">
-	  <?php if(isset($this->breadcrumbs)):?>
-			<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-				'links'=>$this->breadcrumbs,
-				'homeLink'=>false,
-				'tagName'=>'ul',
-				'separator'=>'',
-				'activeLinkTemplate'=>'<li><a href="{url}">{label}</a> <span class="divider">/</span></li>',
-				'inactiveLinkTemplate'=>'<li><span>{label}</span></li>',
-				'htmlOptions'=>array ('class'=>'breadcrumb')
-			)); ?>
-		<!-- breadcrumbs -->
-	  <?php endif?>
+	    <div class="container-fluid">
+            <!--Mensaje de sesion. Primero se pregunta si existe mensaje de sesion-->
+            <!--Se crea variable $msg para que se almacene si existe-->
+            <?php if(($msg=Yii::app()->user->getFlashes())!==null):?>
+            <!--Los mensajes de sesion son un array se recorren con foreach-->
+            <?php foreach($msg as $type => $message):?>
+            <div class="alert alert-<?php echo $type?>">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><strong><?php echo ucfirst($type)?>!</strong></h4>
+                <?php echo $message?>
+            </div>
+            <?php endforeach;?>
+            <?php endif;?>
+
+          <?php if(isset($this->breadcrumbs)):?>
+                <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+                    'links'=>$this->breadcrumbs,
+                    'homeLink'=>false,
+                    'tagName'=>'ul',
+                    'separator'=>'',
+                    'activeLinkTemplate'=>'<li><a href="{url}">{label}</a> <span class="divider">/</span></li>',
+                    'inactiveLinkTemplate'=>'<li><span>{label}</span></li>',
+                    'htmlOptions'=>array ('class'=>'breadcrumb')
+                )); ?>
+            <!-- breadcrumbs -->
+          <?php endif?>
+
+        <?php echo $content ?>
 	
-	<?php echo $content ?>
 	
-	
-	</div><!--/.fluid-container-->
-	</div>
+        </div><!--/.fluid-container-->
+    </div<!--./cont-->
 
 	<div class="extra">
 	  <div class="container-fluid" >
