@@ -77,10 +77,21 @@ class CountriesController extends Controller
         #Para cabeceras y exportaciones
         #Yii::app()->request->sendFile("")."<br>";
 
+        #--------------------COMPONENTE USUARIO / USER COMPONENT-----------------
 
+        #Yii::app()->user->setFlash("error","My message"); //Setea mensaje de error
+        #Yii::app()->user->getFlash("error"); //Obtiene mensaje de error
+        #Yii::app()->user->getFlashes(); //Obtiene todos los mensajes seteados en flash
+        #Yii::app()->user->name; //Nombre de usuario
+
+        #Yii::app()->user->setState("MyVar","somtething"); // Acepta 2 parametros el nombre de variable y el valor. Para agregar sesiones
+        #Yii::app()->user->getState("MyVar"); // para obtener lel cotnenido de la variable
+        #Yii::app()->user->hasState("MyVar"); // Pregunta si tiene estado
+
+        #Yii::app()->user->login(CUserIdentity,24); // Acepta dos pametros, la identidad del usuario y el tiempo de la sesion
+        #Yii::app()->user->logout();//Sacando al usuario en sesion
 
         #-----------------------------------------------------------------------
-
 
         #Consultando la tabla accediendo directamente a la clase del modelo con el metodo estatico
         #Accede a todos los datos de la tabla

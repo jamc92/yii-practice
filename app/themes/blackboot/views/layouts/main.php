@@ -99,7 +99,7 @@
 	
 	
         </div><!--/.fluid-container-->
-    </div<!--./cont-->
+    </div><!--./cont-->
 
 	<div class="extra">
 	  <div class="container-fluid" >

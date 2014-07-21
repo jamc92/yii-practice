@@ -39,7 +39,7 @@ class UsersController extends Controller
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
 
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -72,6 +72,8 @@ class UsersController extends Controller
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
+			#Usando MD5 para cifrado de clave al crear usuario
+			$model->password = md5($model->password);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -96,6 +98,8 @@ class UsersController extends Controller
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
+			#Usando MD5 para cifrado de clave al actualizar usuario
+			$model->password = md5($model->password);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
