@@ -93,6 +93,20 @@ class CountriesController extends Controller
 
         #-----------------------------------------------------------------------
 
+        #Yii::app()->authManager->createRole("admin");
+        #Yii::app()->authManager->assign("admin",2);
+
+        #Si un usuario tiene un permiso determinado pero no es el mismo que esta logueado se pregunta de la siguiente forma
+        #Yii::app()->authManager->checkAccess("admin",2);
+        #echo "hola"
+
+
+        /*if(Yii::app()->authManager->checkAccess("admin",Yii::app()->user->id))
+            echo "Hello World from authManager<br>";*/
+        
+        /*if(Yii::app()->user->checkAccess("admin"))
+            echo "Hello World from User";
+        */
         #Consultando la tabla accediendo directamente a la clase del modelo con el metodo estatico
         #Accede a todos los datos de la tabla
         $countries=Countries::model()->findAll();
@@ -110,7 +124,7 @@ class CountriesController extends Controller
         if(isset($_POST["Countries"]))
         {
             /*Parametro del CActiveRecord llamado 'attributes' que recibe un array clave valor con los parametros de ese
-            *model. Toma y hace un forcearh de ese array y va a setear todos los valores que traiga ese array con
+             *model. Toma y hace un forcearh de ese array y va a setear todos los valores que traiga ese array con
             * los valores que equivalen a los campos del modelo.
             * En esta instancia del modelo ya se tienen los valores que se necesitan para guardar en la base de datos
             */
