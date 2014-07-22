@@ -62,8 +62,29 @@ class UsersController extends Controller
 	 */
 	public function actionView($id)
 	{
+
+		#Creando nuevo formulario para $role
+		$role=new RoleForm;
+		#Logica para el role!
+		if(isset($_POST["RoleForm"]))
+		{
+			#Setear el Formulario
+			$role->attributes=$_POST["RoleForm"];
+			#Si valida. Si estan correctos
+			if($role->validate())
+			{	
+				#Crear role.
+				Yii::app()->authManager->createRole($role->name,$role->description);
+				#Asignar role.
+				Yii::app()->authManager->assign($role->name,$id);
+				$this->redirect(array("view","id"=>$id));
+			}
+		}
+
+
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+			'role'=>$role,
 		));
 	}
 
