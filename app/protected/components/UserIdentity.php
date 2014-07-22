@@ -7,6 +7,8 @@
  */
 class UserIdentity extends CUserIdentity
 {
+	#Declarando $_id privada
+	private $_id;
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -29,7 +31,20 @@ class UserIdentity extends CUserIdentity
 		elseif(md5($this->password)!==$user->password)
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		else
+		{
+			#Al _id de este controlador se le asigna el id de usuario
+			$this->_id=$user->id;
+			#Se setea el estado de este controlador para el email de $user->email
+			$this->setState("email",$user->email);
 			$this->errorCode=self::ERROR_NONE;
+		}
 		return !$this->errorCode;
+	}
+
+	#Funcion para obtener ID del usuario
+	public function getId()
+	{
+		#Retorn el id del nombre de usuario
+		return $this->_id;
 	}
 }
