@@ -28,9 +28,19 @@ class UsersController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','assign'),
                 //Valor '@' para que solo el 'admin' vea los uruarios registrados
-				'users'=>array('@'),
+				'users'=>array('*'),
+				#Permitir controladores solo a usuarios
+				//'controllers'=>array('users');
+				#Permitir acceso solo a las siguientes IP's
+				//'ips'=>"192.168.0.1",
+				#Permitir acceso de peticion solo via POST
+				//'verbs'=>("POST");
+				#Reglas de acceso
+				//'expression'=>function($user,$rule){return $user->id==1;},
+				#Permitir a los roles definidos
+				#'roles'=>array('admin'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
@@ -38,8 +48,7 @@ class UsersController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-
-				'users'=>array('@'),
+				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -157,6 +166,23 @@ class UsersController extends Controller
         $this->render('admin',array(
             'model'=>$model,
         ));
+    }
+
+    #Asignar y desasignar
+    public function actionAssign($id)
+    {
+    	#Si tiene el item asociado, entonces que sea removido
+    	if(Yii::app()->authManager->checkAccess($_GET["item"],$id))
+    	{
+    		Yii::app()->authManager->revoke($_GET["item"],$id);
+    	}
+    	else
+    	{
+    		#Sino que se lo asigne
+    		Yii::app()->authManager->assign($_GET["item"],$id);
+    	}
+
+    	$this->redirect(array("view","id"=>$id));
     }
 
 	/**
