@@ -42,6 +42,14 @@ return array(
 	// application components
 	'components'=>array(
 
+		#Componente para permisologias de roles
+		'authManager'=>array(
+			#Va dirigido a una base de datos
+			"class"=>"CDbAuthManager",
+			#Se indica el nombre del componente que va a la BD
+			"connectionID"=>"db",
+			),
+
 		#Definiendo componente propio
 		#Los componentes siempre van a recibir un parametro llamado 'class' que es la clase en que esta basada ese componente
 		/*'happy'=>array(
