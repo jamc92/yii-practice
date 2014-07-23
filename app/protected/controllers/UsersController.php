@@ -65,6 +65,16 @@ class UsersController extends Controller
 
 		#Creando nuevo formulario para $role
 		$role=new RoleForm;
+
+		#Logica para validar en AJAX
+		#Si AJAX es igual al ID del formulario
+		if(isset($_POST["ajax"]) and $_POST["ajax"]==="role-form")
+		{
+			#Entonces se usa el metodo estatico de CActiveForm validate() y recibe el modelo $role
+			echo CActiveForm::validate($role);
+			Yii::app()->end();
+		}
+
 		#Logica para el role!
 		if(isset($_POST["RoleForm"]))
 		{
